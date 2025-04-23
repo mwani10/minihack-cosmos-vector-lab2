@@ -12,9 +12,9 @@ param (
     [bool]$skipCreatingResourceGroup = $false, # Skip creating the resource group
     [bool]$skipCreatingCosmosDBCluster = $false, # Skip creating the Cosmos DB cluster
     [bool]$skipCreatingCosmosDBPublicIPFirewallRule = $false, # Skip creating the Cosmos DB public IP firewall rule
-    [bool]$skipCreatingAzureOpenAIAccount = $true, # Skip creating the Azure OpenAI account
-    [bool]$skipCreatingAzureOpenAIDeployment = $true, # Skip creating the Azure OpenAI deployment
-    [bool]$skipCreatingAzureOpenAICompletionDeployment = $true, # Skip creating the Azure OpenAI completion deployment
+    [bool]$skipCreatingAzureOpenAIAccount = $false, # Skip creating the Azure OpenAI account
+    [bool]$skipCreatingAzureOpenAIDeployment = $false, # Skip creating the Azure OpenAI deployment
+    [bool]$skipCreatingAzureOpenAICompletionDeployment = $false, # Skip creating the Azure OpenAI completion deployment
 
     [string]$cosmosCluster, # The name of the Cosmos DB cluster
     [string]$cosmosClusterLocation, # The location for the Cosmos DB cluster
